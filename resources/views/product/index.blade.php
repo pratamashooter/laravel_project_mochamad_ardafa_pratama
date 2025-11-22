@@ -4,7 +4,7 @@
     <div class="container-xxl flex-grow-1 container-p-y">
         {{-- Breadcrumb dinamis --}}
         <x-breadcrumb :items="[
-            'Produk' => route('products.index'),
+            'Produk' => route('product.index'),
             'Daftar Produk' => '',
         ]" />
         <!-- Responsive Table -->
@@ -12,7 +12,7 @@
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="mb-0">Daftar Produk</h5>
                 <!-- Search Form -->
-                <form action="{{ route('products.index') }}" method="GET" class="d-flex" style="width: 300px;">
+                <form action="{{ route('product.index') }}" method="GET" class="d-flex" style="width: 300px;">
                     <input type="text" name="search" class="form-control form-control me-2" placeholder="Cari..."
                         value="{{ request('search') }}">
                     <button class="btn btn-primary btn-sm" type="submit">

@@ -30,6 +30,12 @@ default" data-assets-path=""
 
     <script src="{{ asset('assets/vendor/js/helpers.js') }}"></script>
     <script src="{{ asset('assets/js/config.js') }}"></script>
+
+    <style>
+        div:where(.swal2-container) {
+            z-index: 9999 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,6 +60,9 @@ default" data-assets-path=""
     <script src="{{ asset('assets/vendor/libs/apex-charts/apexcharts.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="{{ asset('assets/js/dashboards-analytics.js') }}"></script>
+
+    @stack('scripts')
+
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
