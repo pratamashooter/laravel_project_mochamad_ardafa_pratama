@@ -44,7 +44,8 @@
                         <tbody>
                             @foreach ($categories as $category)
                                 <tr>
-                                    <td>{{ $loop->iteration + ($categories->currentPage() - 1) * $categories->perPage() }}
+                                    <td>
+                                        {{ $loop->iteration + ($categories->currentPage() - 1) * $categories->perPage() }}
                                     </td>
                                     <td>{{ $category->nama }}</td>
                                     <td>
