@@ -71,15 +71,37 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="{{ route('products.create') }}" class="menu-link">
-                        <div data-i18n="Basic">Tambah Data</div>
+                    <a href="{{ route('product.index') }}" class="menu-link">
+                        <div data-i18n="Basic">Daftar Produk</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ route('product.create') }}" class="menu-link">
+                        <div data-i18n="Basic">Tambah Produk</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                <div data-i18n="Authentications">Katalog Kategori</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="{{ route('category.index') }}" class="menu-link">
+                        <div data-i18n="Basic">Daftar Kategori</div>
+                    </a>
+                    <a href="{{ route('category.create') }}" class="menu-link">
+                        <div data-i18n="Basic">Tambah Kategori</div>
                     </a>
                 </li>
             </ul>
         </li>
 
+
         <!-- Transaksi -->
-        <li class="menu-header small text-uppercase">
+        {{-- <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Transaksi</span>
         </li>
         <li class="menu-item">
@@ -105,7 +127,7 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> --}}
     </ul>
 
 </aside>
